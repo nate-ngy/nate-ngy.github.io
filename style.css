@@ -312,6 +312,13 @@ a {
 
 }
 
+.main-left {
+    width:25%;
+    display:grid;
+    gap: 10px;
+
+}
+
 .main-right {
     background-color: rgba(205, 238, 248, 0.95);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -381,11 +388,4 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     border: 2px solid #6ad5dc;
-}
-
-.main-left {
-    width:25%;
-    display:grid;
-    gap: 10px;
-
 }
