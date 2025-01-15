@@ -1,0 +1,51 @@
+.music-box {
+
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #000;
+    max-width: 500px;
+    height: 130px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Wonderly', Arial, sans-serif;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.music-cover {
+
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: #000 2px solid;
+}
+
+.music-text {
+    display: inline;
+    margin-top: calc(10px);
+    padding-left: 20px;
+    font-size: 15px;
+    Font-family: Exo;
+}
+
+.music-title {
+    display: inline;
+    margin-top: calc((130px / 3));
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.music-play {
+    display: inline;
+    margin-top: calc(2*(130px / 3));
+    left: 310px;
+    height: 50px;
+    width: auto;
+}
+
+.exo-2 {
+    font-family: "Exo 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}

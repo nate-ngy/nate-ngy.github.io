@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="370.31937"
+   height="354.86346"
+   viewBox="0 0 370.31937 354.86346"
+   sodipodi:docname="play.svg"
+   inkscape:export-filename="playbar.png"
+   inkscape:export-xdpi="83.553223"
+   inkscape:export-ydpi="83.553223"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient6"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#7ad9e0;stop-opacity:1;"
+         offset="0"
+         id="stop6" />
+      <stop
+         style="stop-color:#7ad9e0;stop-opacity:0;"
+         offset="1"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6"
+       id="linearGradient7"
+       x1="197.60352"
+       y1="143.10394"
+       x2="223.34514"
+       y2="143.10394"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-0.37927201)" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.6478938"
+     inkscape:cx="91.632117"
+     inkscape:cy="166.57627"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g7" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1"
+     transform="translate(-80.670291,34.327783)">
+    <g
+       id="g7">
+      <rect
+         style="fill:#08172c;fill-opacity:1;stroke-width:0.794375"
+         id="rect2-2"
+         width="321.71112"
+         height="5.0080438"
+         x="104.97442"
+         y="140.59993" />
+      <rect
+         style="fill:#7ad9e0;fill-opacity:1;stroke-width:0.75885"
+         id="rect2"
+         width="92.629089"
+         height="5.0080414"
+         x="104.97442"
+         y="140.59993" />
+      <rect
+         style="fill:url(#linearGradient7);fill-opacity:1"
+         id="rect6"
+         width="25.741625"
+         height="5.0080414"
+         x="197.22424"
+         y="140.59993" />
+    </g>
+  </g>
+</svg>
