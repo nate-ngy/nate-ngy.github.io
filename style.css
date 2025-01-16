@@ -307,31 +307,25 @@ a {
 
 .main-box {
     display: flex;
-    gap: 10px;
     font-family: 'Exo', Arial, sans-serif;
-
+    gap: 10px;
 }
 
 .main-left {
-    width:25%;
-    display:grid;
-    gap: 10px;
+    width: 25%;
+    display: grid;
 
+    gap: 10px;
 }
 
 .main-right {
-    background-color: rgba(205, 238, 248, 0.95);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 2px solid #6ad5dc;
     width: 25%;
-    height: 300px;
-    overflow-wrap: break-word;
-    overflow-y: scroll;
-    padding: 10px;
+    height:fit-content;
+    display: grid;
 
+    gap: 10px;
 }
+
 
 .main-updates {
     background-color: rgba(205, 238, 248, 0.95);
@@ -388,4 +382,25 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     border: 2px solid #6ad5dc;
+}
+
+.main-friends {
+    background-color: rgba(205, 238, 248, 0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 2px solid #6ad5dc;
+    justify-content: center;
+    padding: 10px;
+
+    height: fit-content;
+
+
+}
+
+.blinkie {
+    transition: transform 0.3s ease;
+}
+
+.blinkie:hover {
+    transform: scale(1.05);
 }
