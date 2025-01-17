@@ -1,0 +1,69 @@
+.carousel-container {
+    position: relative;
+    width: 600px;
+    margin: 40px auto;
+    perspective: 1000px;
+}
+
+.carousel-wrapper {
+    position: relative;
+    /* Changed to maintain square aspect ratio */
+    aspect-ratio: 1;
+    padding: 40px 20px;
+}
+
+.carousel-content {
+    position: relative;
+    height: 100%;
+}
+
+.album {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #6ad5dc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(205, 238, 248, 0.95);
+}
+
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.control-button {
+    padding: 15px;
+    border: 2px solid #6ad5dc;
+    border-radius: 50%;
+    background-color: rgba(205, 238, 248, 0.95);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    pointer-events: auto;
+    z-index: 1000;
+    margin-left: -40px;
+    margin-right: -70px;
+}
+
+.control-button:hover {
+    background-color: #6ad5dc;
+}
+
+.control-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
