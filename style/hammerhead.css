@@ -1,0 +1,114 @@
+.carousel-container {
+    position: relative;
+    width: 400px;
+    margin: 0px auto;
+    perspective: 1000px;
+
+
+}
+
+.carousel-wrapper {
+    position: relative;
+    /* Changed to maintain square aspect ratio */
+    aspect-ratio: 1;
+    padding: 40px 20px;
+    
+    
+}
+
+.carousel-content {
+    position: relative;
+    height: 100%;
+    
+}
+
+.album {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #6ad5dc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(205, 238, 248, 0.95);
+}
+
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.control-button {
+
+    border: none;
+    border-radius: 50%;
+    background-color:transparent;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    transition: background-color 0.3s ease ;
+    transition: transform 0.3s ease;
+    pointer-events: auto;
+    z-index: 1001;
+    margin-left: -50px;
+    margin-right: -70px;
+}
+
+.control-button.left:hover {
+
+    transform: scale(1.1) translateX(-10px);
+}
+
+.control-button.right:hover {
+    transform: scale(1.1) translateX(10px); /* Move right button towards the outside */
+}
+.control-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hammerhead-box-box {
+    position: absolute;
+    top: 10px;
+    left: 50vh;
+    border: 2px solid #6ad5dc;
+    padding: 8px;
+    width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+
+
+    background-image: linear-gradient(#ffffff 10px, transparent 10px), linear-gradient(to right, #ffffff 10px, transparent 10px);
+    background-size: 13px 13px;
+    background-color: #91d4ec;
+
+    border-radius: 10px;
+
+}
+
+.media-separator {
+
+    width: 100%;
+    font-family: 'Wonderly', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #0c171d;
+    overflow: hidden;
+    gap:20px;
+}

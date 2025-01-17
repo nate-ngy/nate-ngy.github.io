@@ -2,9 +2,11 @@ class AlbumCarousel {
     constructor() {
         this.albums = [
             { id: 1, src: "Images/Album/BrasilianSkies.jpg", alt: "Album 1" },
-            { id: 2, src: "Images/Album/ClubeDaEsquina.jpg", alt: "Album 2" },
+            { id: 2, src: "Images/Album/ClubedaEsquina.jpg", alt: "Album 2" },
             { id: 3, src: "Images/Album/FloatingPoints.jpg", alt: "Album 3" },
-            { id: 4, src: "Images/Album/Gingko.jpg", alt: "Album 4" }
+            { id: 4, src: "Images/Album/Gingko.jpg", alt: "Album 4" },
+            { id: 5, src: "Images/Album/Hexalogy.jpg", alt: "Album 5" },
+            { id: 6, src: "Images/Album/IGOR.jpg", alt: "Album 6" }
         ];
         
         this.transitioning = false;
@@ -23,8 +25,8 @@ class AlbumCarousel {
     getPositionStyles(index) {
         return {
             zIndex: this.albums.length - index,
-            transform: `translate(${index * 10}px, ${index * 10}px)`,
-            opacity: Math.max(1 - index * 0.2, 0.4)
+            transform: `translateX(${index * 20}px`,
+
         };
     }
 
