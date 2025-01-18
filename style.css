@@ -52,18 +52,27 @@ a {
 }
 
 .index-body {
-    margin: 0;
-    padding: 0;
-    max-width: 100vh;
     background-image: url('Images/WarmWaterD4.png');
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.enter-main {
+    width:fit-content;
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 
 
+    transition: transform 1s ease-in-out;
+}
+
+.enter-main:hover {
+    transform: rotate(-360deg) scale(1.8);
 }
 
 .main-body {
@@ -197,17 +206,7 @@ a {
 
 
 
-.enter-main {
-    display: flex;
-    justify-content: center;
-    margin-left: 100%;
-    margin-top: 40%;
-    transition: transform 1s ease-in-out;
-}
 
-.enter-main:hover {
-    transform: rotate(-360deg) scale(1.8);
-}
 
 .header-container {
     display: flex;
