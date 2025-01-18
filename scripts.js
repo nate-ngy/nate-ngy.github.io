@@ -1,12 +1,48 @@
 class AlbumCarousel {
     constructor() {
         this.albums = [
-            { id: 1, src: "Images/Album/BrasilianSkies.jpg", alt: "Album 1" },
-            { id: 2, src: "Images/Album/ClubedaEsquina.jpg", alt: "Album 2" },
-            { id: 3, src: "Images/Album/FloatingPoints.jpg", alt: "Album 3" },
-            { id: 4, src: "Images/Album/Gingko.jpg", alt: "Album 4" },
-            { id: 5, src: "Images/Album/Hexalogy.jpg", alt: "Album 5" },
-            { id: 6, src: "Images/Album/IGOR.jpg", alt: "Album 6" }
+            { 
+                id: 1, 
+                src: "Images/Album/BrasilianSkies.jpg", 
+                alt: "Album 1",
+                rating: [1, 1, 1, 2, 0], // [full, full, full, half, empty]
+                review: "A masterpiece of Brazilian jazz fusion, featuring intricate rhythms and melodic complexity."
+            },
+            { 
+                id: 2, 
+                src: "Images/Album/ClubedaEsquina.jpg", 
+                alt: "Album 2",
+                rating: [1, 1, 1, 1, 1], // All full stars
+                review: "Milton Nascimento's magnum opus, a perfect blend of MPB and progressive rock."
+            },
+            { 
+                id: 3, 
+                src: "Images/Album/FloatingPoints.jpg", 
+                alt: "Album 3",
+                rating: [1, 1, 1, 1, 0], // Four full stars
+                review: "Electronic experimentation meets jazz in this groundbreaking album."
+            },
+            { 
+                id: 4, 
+                src: "Images/Album/Gingko.jpg", 
+                alt: "Album 4",
+                rating: [1, 1, 1, 0, 0], // Three full stars
+                review: "A beautiful ambient journey through minimalist soundscapes."
+            },
+            { 
+                id: 5, 
+                src: "Images/Album/Hexalogy.jpg", 
+                alt: "Album 5",
+                rating: [1, 1, 1, 2, 0], // Three and a half stars
+                review: "An ambitious six-part series that pushes musical boundaries."
+            },
+            { 
+                id: 6, 
+                src: "Images/Album/IGOR.jpg", 
+                alt: "Album 6",
+                rating: [1, 1, 1, 1, 2], // Four and a half stars
+                review: "Tyler, The Creator's most cohesive and mature work to date."
+            }
         ];
         
         this.transitioning = false;
@@ -51,6 +87,7 @@ class AlbumCarousel {
             this.wrapper.appendChild(albumElement);
         });
     }
+    
 
     setupEventListeners() {
         this.prevButton.addEventListener('click', () => this.rotate('left'));

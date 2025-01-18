@@ -112,3 +112,18 @@
     overflow: hidden;
     gap:20px;
 }
+
+
+
+.rating {
+    display:flex;
+    width: fit-content;
+    height:fit-content;
+    gap: 2px;
+
+}
+
+.hammerhead-rating-resize {
+    width: 25px;
+    height: auto;
+}
