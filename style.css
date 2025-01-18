@@ -69,15 +69,19 @@ a {
 .main-body {
     background-image: url('Images/WarmWaterD4.png');
     cursor: url('Images/Cursor/DolphinN_page_01.png'), auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.hammerhead-body {
-    background-image: url("Images/bg/water3.jpg")
-}
+
 
 .jellyfish-body {
-    background-image: url("Images/bg/water2.webp")
+    background-image: url("Images/bg/water2.webp");
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cursor {
@@ -163,9 +167,7 @@ a {
 
 
 .text-box-box {
-    position: absolute;
-    top: 10px;
-    left: 50vh;
+
     border: 2px solid #6ad5dc;
     padding: 8px;
     width: 1000px;

@@ -1,3 +1,11 @@
+.hammerhead-body {
+    background-image: url("../Images/bg/water3.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .carousel-container {
     position: relative;
     width: 400px;
@@ -81,9 +89,6 @@
 }
 
 .hammerhead-box-box {
-    position: absolute;
-    top: 10px;
-    left: 50vh;
     border: 2px solid #6ad5dc;
     padding: 8px;
     width: 1000px;
