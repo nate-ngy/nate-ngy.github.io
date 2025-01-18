@@ -5,43 +5,43 @@ class AlbumCarousel {
                 id: 1, 
                 src: "Images/Album/BrasilianSkies.jpg", 
                 alt: "Album 1",
-                rating: [1, 1, 1, 2, 0], // [full, full, full, half, empty]
-                review: "A masterpiece of Brazilian jazz fusion, featuring intricate rhythms and melodic complexity."
+                rating: [1, 1, 1, 1, 1], 
+                review: "Now I only need to write the reviews themselves"
             },
             { 
                 id: 2, 
                 src: "Images/Album/ClubedaEsquina.jpg", 
                 alt: "Album 2",
-                rating: [1, 1, 1, 1, 1], // All full stars
-                review: "Milton Nascimento's magnum opus, a perfect blend of MPB and progressive rock."
+                rating: [1, 1, 1, 2, 0], 
+                review: "MMm yess this is a review"
             },
             { 
                 id: 3, 
                 src: "Images/Album/FloatingPoints.jpg", 
                 alt: "Album 3",
-                rating: [1, 1, 1, 1, 0], // Four full stars
-                review: "Electronic experimentation meets jazz in this groundbreaking album."
+                rating: [1, 1, 1, 1, 2], 
+                review: "good album I reckon"
             },
             { 
                 id: 4, 
                 src: "Images/Album/Gingko.jpg", 
                 alt: "Album 4",
-                rating: [1, 1, 1, 0, 0], // Three full stars
-                review: "A beautiful ambient journey through minimalist soundscapes."
+                rating: [0, 0, 0, 0, 0], 
+                review: "this album ain't even out yet lol"
             },
             { 
                 id: 5, 
                 src: "Images/Album/Hexalogy.jpg", 
                 alt: "Album 5",
-                rating: [1, 1, 1, 2, 0], // Three and a half stars
-                review: "An ambitious six-part series that pushes musical boundaries."
+                rating: [1, 1, 1, 1, 2], 
+                review: "this is sick"
             },
             { 
                 id: 6, 
                 src: "Images/Album/IGOR.jpg", 
                 alt: "Album 6",
                 rating: [1, 1, 1, 1, 2], // Four and a half stars
-                review: "Tyler, The Creator's most cohesive and mature work to date."
+                review: "this album is dope"
             }
         ];
         
@@ -85,14 +85,37 @@ class AlbumCarousel {
 
             albumElement.appendChild(img);
             this.wrapper.appendChild(albumElement);
+
+            // Update rating for the front album (index 0)
+            if (index === 0) {
+                this.updateRating(album.rating, album.review);
+            }
         });
     }
-    
 
+    updateRating(rating, review) {
+        const ratingContainer = document.getElementById('albumRating');
+        const reviewContainer = document.getElementById('albumReview');
+        
+        if (ratingContainer) {
+            ratingContainer.innerHTML = '';
+            rating.forEach(star => {
+                const img = document.createElement('img');
+                img.className = 'hammerhead-rating-resize';
+                img.src = `Images/star/star${star}.png`;
+                ratingContainer.appendChild(img);
+            });
+        }
+        
+        if (reviewContainer) {
+            reviewContainer.textContent = review;
+        }
+    }
     setupEventListeners() {
         this.prevButton.addEventListener('click', () => this.rotate('left'));
         this.nextButton.addEventListener('click', () => this.rotate('right'));
     }
+
 
     rotate(direction) {
         if (this.transitioning) return;
@@ -120,7 +143,8 @@ class AlbumCarousel {
             setTimeout(() => {
                 this.albums.push(this.albums.shift());
                 this.renderAlbums();
-                
+                this.updateRating(this.albums[0].rating, this.albums[0].review);
+
                 setTimeout(() => {
                     this.transitioning = false;
                     this.prevButton.disabled = false;
@@ -161,6 +185,7 @@ class AlbumCarousel {
             setTimeout(() => {
                 this.albums.unshift(this.albums.pop());
                 this.renderAlbums();
+                this.updateRating(this.albums[0].rating, this.albums[0].review);
                 
                 setTimeout(() => {
                     this.transitioning = false;
@@ -170,6 +195,7 @@ class AlbumCarousel {
             }, 500);
         }
     }
+
 }
 
 // Initialize the carousel when the page loads
